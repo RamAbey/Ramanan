@@ -1,0 +1,281 @@
+* {
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color:black;
+    margin:auto;
+    width:100%;
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background:gray;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#particles-js{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    font-size:72px;
+    font-weight:700;
+    padding-top:100px;
+    position:relative;
+}
+
+#home {
+}
+
+#home .sub-heading h2 {
+    color:gray;
+    font-weight:700;
+    font-size:30px;
+    margin-top:25px;
+    padding-bottom: 60px;
+    position:relative;
+}
+
+/* Profile Picture */
+#profpic {
+    border-radius:5%;
+    margin:20px;
+    transition: transform 0.5s ease;
+    position:relative;
+}
+#profpic:hover {
+    opacity:90%;
+    transform:scale(1.1);
+}
+
+/* Navigation Bar */
+nav {
+    overflow: hidden;
+    width:60%;
+    margin:auto;
+    border-top:3px solid gray;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:400;
+    color:black;
+    float:center;
+    position:relative;
+}
+
+/* Navigation Bar Buttons*/
+.nav_links {
+    list-style:none; 
+    font-size:20px;
+}
+.nav_links li {
+    display:inline-block;
+    padding:10px 20px;
+}
+.nav_links li a {
+    margin-top:10px;
+    border-radius:5px;
+    padding:5px;
+    color:black;
+    font-weight:700;
+    transition: all 0.5s ease 0s;
+}
+.nav_links li a:hover {
+    color:white;
+    background-color:gray;
+}
+.nav_links li a:link {
+    text-decoration: none;
+}
+.content {
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* About Page */
+.page {
+    background: white;
+    font-weight:400;
+    font-size:20px;
+    width:100%;
+    padding-top:115px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    padding-bottom:75px;
+    line-height:30px;
+    min-height:450px;
+}
+.page h1 {
+    font-weight:700;
+    color:gray;
+    font-size:36px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.text-box {
+    width:50% !important;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#about {
+    background:rgb(250, 250, 250);
+}
+#textlink:link {
+    color:darkblue;
+    text-decoration:none;
+}
+#textlink:visited {
+    color:darkblue
+}
+#textlink:hover {
+    color:blue;
+    cursor:pointer;
+}
+
+#education {
+    background: white;
+}
+#projects {
+    background: rgb(250, 250, 250);
+    width:100%;
+}
+.row {
+    text-align: center;
+    margin: auto 0;
+    justify-content: center;
+}
+.card-section {
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card {
+    background-color:white;
+    background-clip: border-box;
+    display:inline-block;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction: normal;
+    vertical-align:top;
+    width:20rem;
+    min-height:150px;
+    padding:10px;
+    margin:15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    flex: 0 0 50%;
+    max-width: 50%;
+    transition: transform 0.5s ease;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform:scale(1.1);
+}
+.card-title {
+    font-size:22px;
+    font-weight:700;
+    line-height:24px;
+    padding-top:7px;
+    padding-bottom:10px;
+    text-align:center;
+}
+.card-subtitle {
+    font-size:16px;
+    font-weight:500;
+    color:gray;
+    line-height: 16px;
+}
+.card-text {
+    font-size:16px;
+    font-weight:400;
+    color:black;
+    line-height:20px;
+    word-wrap: break-word;
+    text-align:center;
+}
+
+#honors {
+    background: white;
+}
+.honor-section {
+}
+.honor-title {
+    font-weight:700;
+    font-size:24px;
+}
+.honor-org {
+    color:gray;
+    font-weight:400;
+    font-size:18px;
+}
+.honor-date h6 {
+
+}
+.honor-descrip {
+    text-indent:;
+    color:black;
+    font-size:20px;
+
+}
+
+#contact {
+    background: rgb(250, 250, 250);
+
+}
+#contactstmt {
+    text-align: center;
+    font-size:30px;
+    font-weight:500;
+}
+.contact-page {
+    width:100%;
+    text-align:center;
+    font-size:24px;
+}
+.icons {
+    text-decoration: none;
+}
+.icons img {
+    text-align:center;
+    filter: grayscale(100%);
+    transition: all 0.75s ease;
+    position:relative;
+}
+.icons img:hover {
+    filter:none;
+    transform:scale(1.1);
+}
+.iconimage {
+    width:40px;
+    border-radius: 5%;
+}
+
+footer {
+    padding:60px;
+}
