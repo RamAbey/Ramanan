@@ -41,9 +41,6 @@ body {
     position:relative;
 }
 
-#home {
-}
-
 #home .sub-heading h2 {
     color:gray;
     font-weight:700;
@@ -105,9 +102,7 @@ nav {
 .nav_links li a:link {
     text-decoration: none;
 }
-.content {
-    padding: 16px;
-}
+
 .sticky {
     position: fixed;
     top: 0px;
@@ -139,9 +134,8 @@ nav {
     margin-bottom:20px;
 }
 .text-box {
-    width:50% !important;
-    margin-left:auto;
-    margin-right:auto;
+    width:50%;
+    margin: 0 auto;
 }
 
 #about {
@@ -267,7 +261,7 @@ nav {
     transition: all 0.75s ease;
     position:relative;
 }
-.icons img:hover {
+.icons img:hover, .icons img:active {
     filter:none;
     transform:scale(1.1);
 }
@@ -278,4 +272,58 @@ nav {
 
 footer {
     padding:60px;
+}
+
+/* Media Queries */
+@media(max-width:768px){
+    .page {
+        width: 100%;
+    }
+    .text-box{
+        width: 75%;
+    }
+    .contact-page{
+        width: 80%;
+        margin: auto;
+    }
+    .card-section {
+        display: block;
+    }
+    .card {
+        max-width: none;
+        width: 85%;
+    }
+}
+
+
+@media(max-width: 500px){
+    #home h1{
+        font-size: 3rem;
+        padding-top: 5vh;
+    }
+    #profpic{
+        margin: 20px 0;
+    }
+    #home .sub-heading h2{
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0 0 50px 0;
+    }
+    .page {
+        width: 100%;
+    }
+    .text-box{
+        width: 80%;
+    }
+    .card-section {
+        display: block;
+    }
+    .card {
+        max-width: none;
+        width: 90%;
+    }
+    .contact-page{
+        width: 80%;
+        margin: auto;
+    }
 }
